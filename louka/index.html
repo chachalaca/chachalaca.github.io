@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vítejte na naší louce | Welcome to Our Meadow</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .language-section {
+            margin-bottom: 40px;
+            padding: 25px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .language-section:last-child {
+            margin-bottom: 0;
+        }
+
+        h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        p {
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        .rules {
+            background: #e8f4f8;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .rules ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .rules li {
+            padding: 8px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .rules li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #27ae60;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .payment-section {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            padding: 30px;
+            text-align: center;
+            color: white;
+        }
+
+        .payment-button {
+            display: inline-block;
+            background: white;
+            color: #f5576c;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .payment-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .emoji {
+            font-size: 1.5em;
+            margin: 0 5px;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Vítejte na naší louce</h1>
+            <p class="subtitle">Welcome to Our Meadow</p>
+        </div>
+
+        <div class="content">
+            <!-- Czech Section -->
+            <div class="language-section">
+                <h2>🇨🇿 Česky</h2>
+                <p>
+                    <strong>Vítáme vás na naší krásné louce!</strong> Jsme rádi, že jste si vybrali toto místo pro váš pobyt v přírodě.
+                </p>
+
+                <div class="rules">
+                    <p><strong>Přenocování je možné za těchto podmínek:</strong></p>
+                    <ul>
+                        <li>Dodržujte všechny místní předpisy CHKO (Chráněná krajinná oblast)</li>
+                        <li>Respektujte české zákony týkající se táboření a pobytu v přírodě</li>
+                        <li>Nezanechávejte po sobě žádné odpadky - vše, co přinesete, také odnesete</li>
+                        <li>Buďte ohleduplní k přírodě a ostatním návštěvníkům</li>
+                        <li>Oheň rozděláváte pouze na vyhrazených místech (pokud jsou k dispozici)</li>
+                    </ul>
+                </div>
+
+                <p>
+                    <span class="emoji">🌿</span> <strong>Pomozte nám udržovat louku krásnou!</strong><br>
+                    Údržba louky vyžaduje pravidelnou péči. Pokud se vám zde líbí a chcete přispět na sekání,
+                    údržbu a zachování tohoto místa pro budoucí návštěvníky, budeme velmi vděční za váš příspěvek.
+                </p>
+            </div>
+
+            <!-- English Section -->
+            <div class="language-section">
+                <h2>🇬🇧 English</h2>
+                <p>
+                    <strong>Welcome to our beautiful meadow!</strong> We're glad you've chosen this place for your stay in nature.
+                </p>
+
+                <div class="rules">
+                    <p><strong>Overnight stays are possible under these conditions:</strong></p>
+                    <ul>
+                        <li>Comply with all local CHKO (Protected Landscape Area) regulations</li>
+                        <li>Respect Czech laws regarding camping and staying in nature</li>
+                        <li>Leave no garbage behind - take everything you bring with you</li>
+                        <li>Be considerate to nature and other visitors</li>
+                        <li>Make fires only in designated areas (if available)</li>
+                    </ul>
+                </div>
+
+                <p>
+                    <span class="emoji">🌿</span> <strong>Help us keep the meadow beautiful!</strong><br>
+                    Maintaining the meadow requires regular care. If you enjoy your stay here and would like to contribute
+                    to mowing, maintenance, and preserving this place for future visitors, we would be very grateful for your contribution.
+                </p>
+            </div>
+        </div>
+
+        <div class="payment-section">
+            <p style="font-size: 1.2em; margin-bottom: 10px;">
+                <strong>Příspěvek za přenocování / Overnight stay contribution</strong>
+            </p>
+            <p>Děkujeme za vaši podporu údržby louky / Thank you for supporting meadow maintenance <span class="emoji">💚</span></p>
+            <a href="https://buy.stripe.com/test_YourStripeLink" class="payment-button" target="_blank">
+                Přispět / Contribute via Stripe
+            </a>
+        </div>
+    </div>
+</body>
+</html>
+
